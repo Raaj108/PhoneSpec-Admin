@@ -1,0 +1,67 @@
+<!-----------------------Battery Information---------------------->
+<section class="form-section" id="Battery">
+    <h3>Battery Information</h3>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.capacity.$invalid && !phoneForm.capacity.$pristine }">
+        <label for="capacity" class="cols-sm-2 form-label">capacity</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.capacity" name="capacity" id="capacity" required placeholder="Enter Capacity" />
+                <p ng-show="phoneForm.capacity.$invalid && !phoneForm.capacity.$pristine" class="help-block">Capacity is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.batteryType.$invalid && !phoneForm.batteryType.$pristine }">
+        <label for="batteryType" class="cols-sm-2 form-label">Battery Type</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.batteryType" name="batteryType" id="batteryType" required placeholder="Enter Battery Type" />
+                <p ng-show="phoneForm.batteryType.$invalid && !phoneForm.batteryType.$pristine" class="help-block">Battery Type is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.internetUse.$invalid && !phoneForm.internetUse.$pristine }">
+        <label for="internetUse" class="cols-sm-2 form-label">Internet Use</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.internetUse" name="internetUse" id="internetUse" required placeholder="Enter Internet Use" />
+                <p ng-show="phoneForm.internetUse.$invalid && !phoneForm.internetUse.$pristine" class="help-block">Internet Use is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.talktime.$invalid && !phoneForm.talktime.$pristine }">
+        <label for="talktime" class="cols-sm-2 form-label">Talk Time</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.talktime" name="talktime" id="talktime" required placeholder="Enter Talk Time" />
+                <p ng-show="phoneForm.talktime.$invalid && !phoneForm.talktime.$pristine" class="help-block">Talk Time is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.standBy.$invalid && !phoneForm.standBy.$pristine }">
+        <label for="standBy" class="cols-sm-2 form-label">Stand By</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.standBy" name="standBy" id="standBy" required ng-list="," placeholder="Enter Stand By" />
+                <p ng-show="phoneForm.standBy.$invalid && !phoneForm.standBy.$pristine" class="help-block">Stand By are required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.playBack.$invalid && !phoneForm.playBack.$pristine }">
+        <label for="playBack" class="cols-sm-2 form-label">Play Back</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.playBack" name="playBack" id="playBack" required ng-list="," placeholder="Enter Play Back" />
+                <p ng-show="phoneForm.playBack.$invalid && !phoneForm.playBack.$pristine" class="help-block">Play Back is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.wirelessCharging.$invalid && !phoneForm.wirelessCharging.$pristine }">
+        <label for="talktime" class="cols-sm-2 form-label">Wireless Charging</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.battery.wirelessCharging" name="wirelessCharging" id="wirelessCharging" required ng-list="," placeholder="Enter Wireless Charging" />
+                <p ng-show="phoneForm.wirelessCharging.$invalid && !phoneForm.wirelessCharging.$pristine" class="help-block">Wireless Charging are required.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="style7"> </section>

@@ -1,0 +1,58 @@
+<!-----------------------Network Information---------------------->
+<section class="form-section" id="Design">
+    <h3>Network Information</h3>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.sim.$invalid && !phoneForm.sim.$pristine }">
+        <label for="sim" class="cols-sm-2 form-label">SIM</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.sim" ng-list="," name="sim" id="sim" required placeholder="Enter SIM" />
+                <p ng-show="phoneForm.sim.$invalid && !phoneForm.sim.$pristine" class="help-block">SIM is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.data.$invalid && !phoneForm.data.$pristine }">
+        <label for="data" class="cols-sm-2 form-label">Data</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.data" name="data" id="data" required placeholder="Enter Data" />
+                <p ng-show="phoneForm.data.$invalid && !phoneForm.data.$pristine" class="help-block">Data is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.gsm.$invalid && !phoneForm.gsm.$pristine }">
+        <label for="gsm" class="cols-sm-2 form-label">GSM </label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.gsm" name="gsm" id="gsm" required placeholder="Enter GSM" />
+                <p ng-show="phoneForm.gsm.$invalid && !phoneForm.gsm.$pristine" class="help-block">GSM is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.lteFDD.$invalid && !phoneForm.lteFDD.$pristine }">
+        <label for="lteFDD" class="cols-sm-2 form-label">LTE-FDD</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.lteFDD" name="lteFDD" id="lteFDD" required placeholder="Enter Technology" />
+                <p ng-show="phoneForm.lteFDD.$invalid && !phoneForm.lteFDD.$pristine" class="help-block">LTE-FDD is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.lteTTD.$invalid && !phoneForm.lteTTD.$pristine }">
+        <label for="lteTTD" class="cols-sm-2 form-label">LTE-TTD</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.lteTTD" ng-list="," name="lteTTD" id="lteTTD" required placeholder="Enter LTE-TTD" />
+                <p ng-show="phoneForm.lteTTD.$invalid && !phoneForm.lteTTD.$pristine" class="help-block">LTE-TTD are required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.umts.$invalid && !phoneForm.umts.$pristine }">
+        <label for="umts" class="cols-sm-2 form-label">UMTS</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.network.umts" ng-list="," name="umts" id="umts" required placeholder="Enter UMTS" />
+                <p ng-show="phoneForm.umts.$invalid && !phoneForm.umts.$pristine" class="help-block">UMTS are required.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="style7"> </section>

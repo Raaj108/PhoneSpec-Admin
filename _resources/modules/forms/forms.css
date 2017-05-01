@@ -1,0 +1,47 @@
+.main-content {
+  max-width: 70%;
+  margin: 0 auto;
+  box-shadow: -1px 2px 5px 2px #999999;
+  padding: 10px 20px;
+}
+
+.form {
+  padding: 0 15px;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.milestone {
+  position: fixed;
+  top: 300px;
+  right: 40px;
+}
+
+.milestone ul {
+  list-style-type: none;
+}
+
+.milestone ul li {
+  cursor: pointer;
+}
+
+.milestone ul li:hover {
+  background-color: #c1c1c1;
+}
+
+@media(max-width:480px) {
+  .flex-row>.flex-col-3 {
+    display: none;
+  }
+  .flex-row>.flex-col-9 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-content {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+}

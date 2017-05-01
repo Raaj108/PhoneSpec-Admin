@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PhoneSpec Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="_resources/css/admin.css">
+  <link rel="stylesheet" href="_resources/css/admin-rtl.css">
+  <link rel="stylesheet" href="_resources/css/nav.css">
+
+</head>
+
+<body ng-app="adminApp">
+  <div class="flex-row">
+    <div class="flex-col-3">
+      <div ng-include="'_resources/templates/nav.template.html'"></div>
+    </div>
+    <div class="flex-col-9">
+      <div ng-view class=".view-wrapper"></div>
+    </div>
+
+  </div>
+
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+
+  <script src="_resources/js/app.js"></script>
+  <script src="_resources/js/app.config.js"></script>
+  <script src="_resources/js/app.factory.js"></script>
+  <script src="_resources/js/app.controller.js"></script>
+
+  <script src="_resources/modules/dashboard/dashboard.module.js"></script>
+  <script src="_resources/modules/dashboard/dashboard.directive.js"></script>
+  <script src="_resources/modules/dashboard/dashboard.controller.js"></script>
+  <script src="_resources/modules/dashboard/dashboard.css"></script>
+
+
+  <script src="_resources/modules/forms/forms.module.js"></script>
+  <script src="_resources/modules/forms/forms.factory.js"></script>
+  <script src="_resources/modules/forms/forms.directive.js"></script>
+  <script src="_resources/modules/forms/forms.controller.js"></script>
+
+
+</body>
+
+</html>

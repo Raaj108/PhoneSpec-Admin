@@ -1,0 +1,58 @@
+<!-----------------------Hardware Information---------------------->
+<section class="form-section" id="Design">
+    <h3>Hardware Information</h3>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.processor.$invalid && !phoneForm.processor.$pristine }">
+        <label for="processor" class="cols-sm-2 form-label">Processor</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.processor" ng-list="," name="processor" id="processor" required placeholder="Enter Processor" />
+                <p ng-show="phoneForm.processor.$invalid && !phoneForm.processor.$pristine" class="help-block">Processor is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.ram.$invalid && !phoneForm.ram.$pristine }">
+        <label for="ram" class="cols-sm-2 form-label">RAM</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.ram" name="ram" id="ram" required placeholder="Enter RAM" />
+                <p ng-show="phoneForm.ram.$invalid && !phoneForm.ram.$pristine" class="help-block">RAM is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.storage.$invalid && !phoneForm.storage.$pristine }">
+        <label for="storage" class="cols-sm-2 form-label">Storage </label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.storage" name="storage" id="storage" required placeholder="Enter Storage" />
+                <p ng-show="phoneForm.storage.$invalid && !phoneForm.storage.$pristine" class="help-block">Storage is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.graphicsProcessor.$invalid && !phoneForm.graphicsProcessor.$pristine }">
+        <label for="graphicsProcessor" class="cols-sm-2 form-label">Graphics Processor</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.graphicsProcessor" name="graphicsProcessor" id="graphicsProcessor" required placeholder="Enter Technology" />
+                <p ng-show="phoneForm.graphicsProcessor.$invalid && !phoneForm.graphicsProcessor.$pristine" class="help-block">Graphics Processor is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.expansion.$invalid && !phoneForm.expansion.$pristine }">
+        <label for="expansion" class="cols-sm-2 form-label">Expansion</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.expansion" ng-list="," name="expansion" id="expansion" required placeholder="Enter Expansion" />
+                <p ng-show="phoneForm.expansion.$invalid && !phoneForm.expansion.$pristine" class="help-block">Expansion are required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine }">
+        <label for="chipset" class="cols-sm-2 form-label">Chipset</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.hardware.chipset" ng-list="," name="chipset" id="chipset" required placeholder="Enter Chipset" />
+                <p ng-show="phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine" class="help-block">Chipset are required.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="style7"> </section>

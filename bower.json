@@ -1,0 +1,23 @@
+{
+  "name": "phonespec-admin",
+  "description": "This is the admin panel of the phonespec app",
+  "main": "server.js",
+  "authors": [
+    "Rajan Patil"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.0",
+    "bootstrap": "3.3.4",
+    "angular": "1.5.x",
+    "angular-route": "1.5.x"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "phonespec-admin"
+    , "version": "1.0.0"
+    , "description": "This is the admin panel of the phonespec app"
+    , "main": "server.js"
+    , "author": "Rajan Patil"
+    , "license": "ISC"
+    , "devDependencies": {
+        "bower": "^1.8.0"
+    }
+}

@@ -1,0 +1,67 @@
+<!-----------------------Design Information---------------------->
+<section class="form-section" id="Design">
+    <h3>Design Information</h3>
+   <!-- <div class="form-group" ng-class="{ 'has-error' : phoneForm.operatingSystem.$invalid && !phoneForm.operatingSystem.$pristine }">
+        <label for="operatingSystem" class="cols-sm-2 form-label">Operating System</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.operatingSystem" name="operatingSystem" id="operatingSystem" required placeholder="Enter Operating System" />
+                <p ng-show="phoneForm.operatingSystem.$invalid && !phoneForm.operatingSystem.$pristine" class="help-block">Operating System is required.</p>
+            </div>
+        </div>
+    </div>-->
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.deviceType.$invalid && !phoneForm.deviceType.$pristine }">
+        <label for="deviceType" class="cols-sm-2 form-label">Device Type</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.deviceType" name="deviceType" id="deviceType" required placeholder="Enter Device Type" />
+                <p ng-show="phoneForm.deviceType.$invalid && !phoneForm.deviceType.$pristine" class="help-block">Device Type is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.dimension.$invalid && !phoneForm.dimension.$pristine }">
+        <label for="dimension" class="cols-sm-2 form-label">Dimension</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.dimension" name="dimension" id="dimension" required placeholder="Enter Dimension" />
+                <p ng-show="phoneForm.dimension.$invalid && !phoneForm.dimension.$pristine" class="help-block">Dimension is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.weight.$invalid && !phoneForm.weight.$pristine }">
+        <label for="weight" class="cols-sm-2 form-label">Weight</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.weight" name="weight" id="weight" required placeholder="Enter Weight" />
+                <p ng-show="phoneForm.weight.$invalid && !phoneForm.weight.$pristine" class="help-block">Weight is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.materials.$invalid && !phoneForm.materials.$pristine }">
+        <label for="materials" class="cols-sm-2 form-label">Materials</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.materials" name="materials" id="materials" required ng-list="," placeholder="Enter Materials" />
+                <p ng-show="phoneForm.materials.$invalid && !phoneForm.materials.$pristine" class="help-block">Materials are required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.colors.$invalid && !phoneForm.colors.$pristine }">
+        <label for="colors" class="cols-sm-2 form-label">Colors</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.colors" name="colors" id="colors" required ng-list="," placeholder="Enter Colors" />
+                <p ng-show="phoneForm.colors.$invalid && !phoneForm.colors.$pristine" class="help-block">Colors is required.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.additionalFeatures.$invalid && !phoneForm.additionalFeatures.$pristine }">
+        <label for="weight" class="cols-sm-2 form-label">Additional Features</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.design.additionalFeatures" name="additionalFeatures" id="additionalFeatures" required ng-list="," placeholder="Enter Additional Features" />
+                <p ng-show="phoneForm.additionalFeatures.$invalid && !phoneForm.additionalFeatures.$pristine" class="help-block">Additional Features are required.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="style7"> </section>
