@@ -5,7 +5,7 @@
         <label for="audio" class="cols-sm-2 form-label">Audio</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.multiMedia.audio" ng-list="," name="audio" id="audio" required placeholder="Enter Audio" />
+                <input type="text" class="form-control" ng-model="formData.multimedia.audio" ng-list="," name="audio" id="audio" required placeholder="Enter Audio" />
                 <p ng-show="phoneForm.audio.$invalid && !phoneForm.audio.$pristine" class="help-block">Audio is required.</p>
             </div>
         </div>
@@ -14,7 +14,7 @@
         <label for="video" class="cols-sm-2 form-label">Video</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.multiMedia.video" name="video" id="video" required placeholder="Enter Video" />
+                <input type="text" class="form-control" ng-model="formData.multimedia.video" name="video" id="video" required placeholder="Enter Video" />
                 <p ng-show="phoneForm.video.$invalid && !phoneForm.video.$pristine" class="help-block">Video is required.</p>
             </div>
         </div>
