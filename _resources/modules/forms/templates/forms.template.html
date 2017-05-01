@@ -1,22 +1,29 @@
 <div>
-    <link rel="stylesheet" href="_resources/modules/forms/forms.css">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
+  <link rel="stylesheet" href="_resources/modules/forms/forms.css">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">
         {{formHeading}}
       </h1>
-            <div class="main-content">
-                <form name="phoneForm" class="form form-horizontal" ng-submit="submitPhone(phoneForm.$valid)" novalidate>
-                    <div ng-include="'_resources/modules/forms/templates/forms.basic.template.html'"></div>
-              
-                    <div ng-include="'_resources/modules/forms/templates/forms.button.template.html'"></div>
-                </form>
-            </div>
-            <div class="milestone">
-                <ul class="list-group">
-                    <li ng-repeat="section in sections" class="list-group-item" ng-click="scrollTo('{{section}}')">{{section}}</li>
-                </ul>
-            </div>
-        </div>
+      <div class="main-content">
+        <form name="phoneForm" class="form form-horizontal" ng-submit="submitPhone(phoneForm.$valid)" novalidate>
+          <div ng-include="'_resources/modules/forms/templates/forms.basic.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.design.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.display.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.camera.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.battery.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.hardware.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.multimedia.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.connectivity.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.network.template.html'"></div>
+          <div ng-include="'_resources/modules/forms/templates/forms.button.template.html'"></div>
+        </form>
+      </div>
+      <div class="milestone">
+        <ul class="list-group">
+          <li ng-repeat="section in sections" class="list-group-item" ng-click="scrollTo('{{section}}')">{{section}}</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
