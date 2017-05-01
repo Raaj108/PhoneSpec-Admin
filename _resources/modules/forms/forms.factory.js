@@ -1,7 +1,7 @@
 angular.module('formsModule').factory('phonePostFactory', ['$http', '$q', function ($http, $q) {
 
   var service = {};
-  var baseUrl = 'http://localhost:4000/api/admin/brand/'
+  var baseUrl = 'http://localhost:5000/api/admin/brand/'
   var _url;
 
   var generateURL = function (_brand) {
@@ -10,7 +10,7 @@ angular.module('formsModule').factory('phonePostFactory', ['$http', '$q', functi
   }
 
   service.processPhoneForm = function (phone) {
-    console.log("called")
+    console.log(phone)
     var _brand = phone.brandName;
     generateURL(_brand);
 
@@ -20,12 +20,12 @@ angular.module('formsModule').factory('phonePostFactory', ['$http', '$q', functi
       url: _url,
       data: phone,
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
       }
     }).then(function successCallback(response) {
       deferred.resolve(response);
     }, function (response) {
-      deferred.reject('There was an error');
+      deferred.reject(response);
     })
     return deferred.promise;
   }
