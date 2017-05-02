@@ -1,49 +1,49 @@
 <!-----------------------Display Information---------------------->
 <section class="form-section" id="Design">
-    <h3>Display Information</h3>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.resolution.$invalid && !phoneForm.resolution.$pristine }">
-        <label for="resolution" class="cols-sm-2 form-label">Resolution</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.display.resolution" ng-list="," name="resolution" id="resolution" required placeholder="Enter Resolution" />
-                <p ng-show="phoneForm.resolution.$invalid && !phoneForm.resolution.$pristine" class="help-block">Resolution is required.</p>
-            </div>
-        </div>
+  <h3>Display Information</h3>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.resolution.$invalid && !phoneForm.resolution.$pristine }">
+    <label for="resolution" class="cols-sm-2 form-label">Resolution</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.display.resolution" name="resolution" id="resolution" required placeholder="width X height" />
+        <p ng-show="phoneForm.resolution.$invalid && !phoneForm.resolution.$pristine" class="help-block">Resolution is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.size.$invalid && !phoneForm.size.$pristine }">
-        <label for="size" class="cols-sm-2 form-label">Size</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.display.size" name="size" id="size" required placeholder="Enter Size" />
-                <p ng-show="phoneForm.size.$invalid && !phoneForm.size.$pristine" class="help-block">Size is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.size.$invalid && !phoneForm.size.$pristine }">
+    <label for="size" class="cols-sm-2 form-label">Screen Size</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.display.size" name="size" id="size" required placeholder="Screen size diagonally(5.8 in)" />
+        <p ng-show="phoneForm.size.$invalid && !phoneForm.size.$pristine" class="help-block">Screen Size is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.pixelDensity.$invalid && !phoneForm.pixelDensity.$pristine }">
-        <label for="pixelDensity" class="cols-sm-2 form-label">Pixel Density</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.display.pixelDensity" name="pixelDensity" id="pixelDensity" required placeholder="Enter Pixel Density" />
-                <p ng-show="phoneForm.pixelDensity.$invalid && !phoneForm.pixelDensity.$pristine" class="help-block">Pixel Density is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.pixelDensity.$invalid && !phoneForm.pixelDensity.$pristine }">
+    <label for="pixelDensity" class="cols-sm-2 form-label">Pixel Density</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.display.pixelDensity" name="pixelDensity" id="pixelDensity" required placeholder="Pilexs per inch (570 ppi)" />
+        <p ng-show="phoneForm.pixelDensity.$invalid && !phoneForm.pixelDensity.$pristine" class="help-block">Pixel Density is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.technology.$invalid && !phoneForm.technology.$pristine }">
-        <label for="technology" class="cols-sm-2 form-label">Technology</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.display.technology" name="technology" id="technology" required placeholder="Enter Technology" />
-                <p ng-show="phoneForm.technology.$invalid && !phoneForm.technology.$pristine" class="help-block">Technology is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.technology.$invalid && !phoneForm.technology.$pristine }">
+    <label for="technology" class="cols-sm-2 form-label">Technology</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.display.technology" name="technology" id="technology" ng-list="," required placeholder="Super AMOLED " />
+        <p ng-show="phoneForm.technology.$invalid && !phoneForm.technology.$pristine" class="help-block">Technology is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.features.$invalid && !phoneForm.features.$pristine }">
-        <label for="features" class="cols-sm-2 form-label">Features</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.display.features" ng-list="," name="features" id="features" required placeholder="Enter Features" />
-                <p ng-show="phoneForm.features.$invalid && !phoneForm.features.$pristine" class="help-block">Features are required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.features.$invalid && !phoneForm.features.$pristine }">
+    <label for="features" class="cols-sm-2 form-label">Features</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.display.features" ng-list="," name="features" id="features" required placeholder="a bezel-less, full-frontal, edge-to-edge screen" />
+        <p ng-show="phoneForm.features.$invalid && !phoneForm.features.$pristine" class="help-block">Features are required.</p>
+      </div>
     </div>
-    <hr class="style7"> </section>
+  </div>
+  <hr class="style7"> </section>

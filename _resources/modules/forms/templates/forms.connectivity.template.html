@@ -1,58 +1,58 @@
 <!-----------------------Connectivity Information---------------------->
 <section class="form-section" id="Design">
-    <h3>Connectivity Information</h3>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.wifi.$invalid && !phoneForm.wifi.$pristine }">
-        <label for="wifi" class="cols-sm-2 form-label">Wi-Fi</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.wifi" ng-list="," name="wifi" id="wifi" required placeholder="Enter Wi-Fi" />
-                <p ng-show="phoneForm.wifi.$invalid && !phoneForm.wifi.$pristine" class="help-block">Wi-Fi is required.</p>
-            </div>
-        </div>
+  <h3>Connectivity Information</h3>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.wifi.$invalid && !phoneForm.wifi.$pristine }">
+    <label for="wifi" class="cols-sm-2 form-label">Wi-Fi</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.wifi" ng-list="," name="wifi" id="wifi" required placeholder="Wi-Fi (802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot ...)" />
+        <p ng-show="phoneForm.wifi.$invalid && !phoneForm.wifi.$pristine" class="help-block">Wi-Fi is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.gps.$invalid && !phoneForm.gps.$pristine }">
-        <label for="gps" class="cols-sm-2 form-label">GPS</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.gps" name="gps" id="gps" required placeholder="Enter GPS" />
-                <p ng-show="phoneForm.gps.$invalid && !phoneForm.gps.$pristine" class="help-block">GPS is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.gps.$invalid && !phoneForm.gps.$pristine }">
+    <label for="gps" class="cols-sm-2 form-label">GPS</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.gps" name="gps" id="gps" required placeholder="" />
+        <p ng-show="phoneForm.gps.$invalid && !phoneForm.gps.$pristine" class="help-block">GPS is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.bluetooth.$invalid && !phoneForm.bluetooth.$pristine }">
-        <label for="bluetooth" class="cols-sm-2 form-label">Bluetooth </label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.bluetooth" name="bluetooth" id="bluetooth" required placeholder="Enter Bluetooth" />
-                <p ng-show="phoneForm.bluetooth.$invalid && !phoneForm.bluetooth.$pristine" class="help-block">Bluetooth is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.bluetooth.$invalid && !phoneForm.bluetooth.$pristine }">
+    <label for="bluetooth" class="cols-sm-2 form-label">Bluetooth </label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.bluetooth" ng-list="," name="bluetooth" id="bluetooth" required placeholder="Bluetooth (5.0, A2DP, LE up to 2Mbps, aptX ...)" />
+        <p ng-show="phoneForm.bluetooth.$invalid && !phoneForm.bluetooth.$pristine" class="help-block">Bluetooth is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.payment.$invalid && !phoneForm.payment.$pristine }">
-        <label for="payment" class="cols-sm-2 form-label">Payment</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.payment" name="payment" id="payment" required placeholder="Enter Payment" />
-                <p ng-show="phoneForm.payment.$invalid && !phoneForm.payment.$pristine" class="help-block">Payment is required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.payment.$invalid && !phoneForm.payment.$pristine }">
+    <label for="payment" class="cols-sm-2 form-label">Payment</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.payment" ng-list="," name="payment" id="payment" required placeholder="Samsung Payment, Apple Pay ..." />
+        <p ng-show="phoneForm.payment.$invalid && !phoneForm.payment.$pristine" class="help-block">Payment is required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.usb.$invalid && !phoneForm.usb.$pristine }">
-        <label for="usb" class="cols-sm-2 form-label">USB</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.usb" ng-list="," name="usb" id="usb" required placeholder="Enter USB" />
-                <p ng-show="phoneForm.usb.$invalid && !phoneForm.usb.$pristine" class="help-block">USB are required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.usb.$invalid && !phoneForm.usb.$pristine }">
+    <label for="usb" class="cols-sm-2 form-label">USB</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.usb" ng-list="," name="usb" id="usb" required placeholder="USB (3.1, Type-C 1.0 reversible connector ...)" />
+        <p ng-show="phoneForm.usb.$invalid && !phoneForm.usb.$pristine" class="help-block">USB are required.</p>
+      </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.other.$invalid && !phoneForm.other.$pristine }">
-        <label for="other" class="cols-sm-2 form-label">Other</label>
-        <div class="cols-sm-10">
-            <div>
-                <input type="text" class="form-control" ng-model="formData.connectivity.other" ng-list="," name="other" id="other" required placeholder="Enter Other" />
-                <p ng-show="phoneForm.other.$invalid && !phoneForm.other.$pristine" class="help-block">Other are required.</p>
-            </div>
-        </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.other.$invalid && !phoneForm.other.$pristine }">
+    <label for="other" class="cols-sm-2 form-label">Other</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.connectivity.other" ng-list="," name="other" id="other" required placeholder="NFC, ANT+, Location  ..." />
+        <p ng-show="phoneForm.other.$invalid && !phoneForm.other.$pristine" class="help-block">Other are required.</p>
+      </div>
     </div>
-    <hr class="style7"> </section>
+  </div>
+  <hr class="style7"> </section>

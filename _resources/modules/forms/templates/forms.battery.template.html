@@ -5,7 +5,7 @@
         <label for="capacity" class="cols-sm-2 form-label">capacity</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.capacity" name="capacity" id="capacity" required placeholder="Enter Capacity" />
+                <input type="text" class="form-control" ng-model="formData.battery.capacity" name="capacity" id="capacity" required placeholder="3000 mAh" />
                 <p ng-show="phoneForm.capacity.$invalid && !phoneForm.capacity.$pristine" class="help-block">Capacity is required.</p>
             </div>
         </div>
@@ -14,8 +14,8 @@
         <label for="batteryType" class="cols-sm-2 form-label">Battery Type</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.batteryType" name="batteryType" id="batteryType" required placeholder="Enter Battery Type" />
-                <p ng-show="phoneForm.batteryType.$invalid && !phoneForm.batteryType.$pristine" class="help-block">Battery Type is required.</p>
+                <input type="text" class="form-control" ng-model="formData.battery.batteryType" name="batteryType" id="batteryType" required placeholder="Li-Ion" />
+                <p ng-show="phoneForm.batteryType.$invalid && !phoneForm.batteryType.$pristine" class="help-block">Battery vagar kemnu chale?</p>
             </div>
         </div>
     </div>
@@ -23,8 +23,8 @@
         <label for="internetUse" class="cols-sm-2 form-label">Internet Use</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.internetUse" name="internetUse" id="internetUse" required placeholder="Enter Internet Use" />
-                <p ng-show="phoneForm.internetUse.$invalid && !phoneForm.internetUse.$pristine" class="help-block">Internet Use is required.</p>
+                <input type="text" class="form-control" ng-model="formData.battery.internetUse" name="internetUse" id="internetUse" required placeholder="16 hours" />
+                <p ng-show="phoneForm.internetUse.$invalid && !phoneForm.internetUse.$pristine" class="help-block">Internet vaprash nai lakho to public marse.</p>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <label for="talktime" class="cols-sm-2 form-label">Talk Time</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.talktime" name="talktime" id="talktime" required placeholder="Enter Talk Time" />
+                <input type="text" class="form-control" ng-model="formData.battery.talktime" name="talktime" id="talktime" required placeholder="16 hours" />
                 <p ng-show="phoneForm.talktime.$invalid && !phoneForm.talktime.$pristine" class="help-block">Talk Time is required.</p>
             </div>
         </div>
@@ -41,7 +41,7 @@
         <label for="standBy" class="cols-sm-2 form-label">Stand By</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.standBy" name="standBy" id="standBy" required ng-list="," placeholder="Enter Stand By" />
+                <input type="text" class="form-control" ng-model="formData.battery.standBy" name="standBy" id="standBy" required ng-list="," placeholder="16 hours" />
                 <p ng-show="phoneForm.standBy.$invalid && !phoneForm.standBy.$pristine" class="help-block">Stand By are required.</p>
             </div>
         </div>
@@ -50,7 +50,7 @@
         <label for="playBack" class="cols-sm-2 form-label">Play Back</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.playBack" name="playBack" id="playBack" required ng-list="," placeholder="Enter Play Back" />
+                <input type="text" class="form-control" ng-model="formData.battery.playBack" name="playBack" id="playBack" required ng-list="," placeholder="16 hours" />
                 <p ng-show="phoneForm.playBack.$invalid && !phoneForm.playBack.$pristine" class="help-block">Play Back is required.</p>
             </div>
         </div>
@@ -59,7 +59,7 @@
         <label for="talktime" class="cols-sm-2 form-label">Wireless Charging</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.battery.wirelessCharging" name="wirelessCharging" id="wirelessCharging" required ng-list="," placeholder="Enter Wireless Charging" />
+                <input type="text" class="form-control" ng-model="formData.battery.wirelessCharging" name="wirelessCharging" id="wirelessCharging" required ng-list="," placeholder="Yes/No" />
                 <p ng-show="phoneForm.wirelessCharging.$invalid && !phoneForm.wirelessCharging.$pristine" class="help-block">Wireless Charging are required.</p>
             </div>
         </div>

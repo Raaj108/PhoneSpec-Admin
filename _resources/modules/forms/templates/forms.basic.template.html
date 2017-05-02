@@ -5,7 +5,7 @@
     <label for="phoneName" class="cols-sm-2 form-label">Phone Name</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.phoneName" name="phoneName" id="phoneName" required placeholder="Enter Phone Name" />
+        <input type="text" class="form-control" ng-model="formData.phoneName" name="phoneName" id="phoneName" required placeholder="Phone Name" />
         <p ng-show="phoneForm.phoneName.$invalid && !phoneForm.phoneName.$pristine" class="help-block">Phone Name is required.</p>
       </div>
     </div>
@@ -15,7 +15,7 @@
     <label for="brandName" class="cols-sm-2 form-label">Brand Name</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.brandName" name="brandName" id="brandName" required placeholder="Enter Brand Name" />
+        <input type="text" class="form-control" ng-model="formData.brandName" name="brandName" id="brandName" required placeholder="Brand Name" />
         <p ng-show="phoneForm.brandName.$invalid && !phoneForm.brandName.$pristine" class="help-block">Brand Name is required.</p>
       </div>
     </div>
@@ -25,7 +25,7 @@
     <label for="availibility" class="cols-sm-2 form-label">Availibility</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.availibility" ng-list=","  name="availibility" id="availibility" required placeholder="Enter Availibility of the phone" />
+        <input type="text" class="form-control" ng-model="formData.availibility" ng-list=","  name="availibility" id="availibility" required placeholder="T-mobile, AT&T, Jio ..." />
         <p ng-show="phoneForm.availibility.$invalid && !phoneForm.availibility.$pristine" class="help-block">Availibility is required.</p>
       </div>
     </div>
