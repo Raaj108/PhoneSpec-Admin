@@ -7,7 +7,17 @@ angular.module('formsModule').controller('formsController', ['$scope', '$log', '
     // call $anchorScroll()
     $anchorScroll();
   }
-  $scope.formData = {};
+  $scope.formData = {
+    "basicInfo": {},
+    "design": {},
+    "display": {},
+    "camera": {},
+    "battery": {},
+    "hardware": {},
+    "multimedia": {},
+    "connectivity": {},
+    "network": {}
+  };
   $scope.submitPhone = function (isValid) {
     if (isValid) {
       phonePostFactory.processPhoneForm($scope.formData).then(function successCallback(response) {
