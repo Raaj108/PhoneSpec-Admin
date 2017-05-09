@@ -11,7 +11,7 @@ angular.module('formsModule').factory('phonePostFactory', ['$http', '$q', functi
 
   service.processPhoneForm = function (phone) {
     console.log(phone)
-    var _brand = phone.brandName;
+    var _brand = phone.basicInfo.brandName;
     generateURL(_brand);
 
     var deferred = $q.defer();

@@ -28,16 +28,16 @@
             </div>
         </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.lteFDD.$invalid && !phoneForm.lteFDD.$pristine }">
-        <label for="lteFDD" class="cols-sm-2 form-label">LTE-FDD</label>
+    <div class="form-group" ng-class="{ 'has-error' : phoneForm.lte.$invalid && !phoneForm.lte.$pristine }">
+        <label for="lte" class="cols-sm-2 form-label">LTE</label>
         <div class="cols-sm-10">
             <div>
-                <input type="text" class="form-control" ng-model="formData.network.lteFDD" name="lteFDD" id="lteFDD" required placeholder="Enter Technology" />
-                <p ng-show="phoneForm.lteFDD.$invalid && !phoneForm.lteFDD.$pristine" class="help-block">LTE-FDD is required.</p>
+                <input type="text" class="form-control" ng-model="formData.network.lte" name="lte" id="lte" required placeholder="Enter Technology" />
+                <p ng-show="phoneForm.lte.$invalid && !phoneForm.lte.$pristine" class="help-block">LTE is required.</p>
             </div>
         </div>
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : phoneForm.lteTTD.$invalid && !phoneForm.lteTTD.$pristine }">
+    <!--<div class="form-group" ng-class="{ 'has-error' : phoneForm.lteTTD.$invalid && !phoneForm.lteTTD.$pristine }">
         <label for="lteTTD" class="cols-sm-2 form-label">LTE-TTD</label>
         <div class="cols-sm-10">
             <div>
@@ -45,7 +45,7 @@
                 <p ng-show="phoneForm.lteTTD.$invalid && !phoneForm.lteTTD.$pristine" class="help-block">LTE-TTD are required.</p>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="form-group" ng-class="{ 'has-error' : phoneForm.umts.$invalid && !phoneForm.umts.$pristine }">
         <label for="umts" class="cols-sm-2 form-label">UMTS</label>
         <div class="cols-sm-10">

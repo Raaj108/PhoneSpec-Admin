@@ -1,6 +1,15 @@
 <!-----------------------Hardware Information---------------------->
 <section class="form-section" id="Design">
   <h3>Hardware Information</h3>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine }">
+    <label for="chipset" class="cols-sm-2 form-label">Chipset</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.hardware.chipset" ng-list="," name="chipset" id="chipset" required placeholder="Chipset Name(Qualcomm MSM8998 Snapdragon 835)" />
+        <p ng-show="phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine" class="help-block">Chipset are required.</p>
+      </div>
+    </div>
+  </div>
   <div class="form-group" ng-class="{ 'has-error' : phoneForm.processor.$invalid && !phoneForm.processor.$pristine }">
     <label for="processor" class="cols-sm-2 form-label">Processor</label>
     <div class="cols-sm-10">
@@ -37,21 +46,21 @@
       </div>
     </div>
   </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.sensors.$invalid && !phoneForm.sensors.$pristine }">
+    <label for="sensors" class="cols-sm-2 form-label">Sensors</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.hardware.sensors" ng-list="," name="sensors" id="sensors" required placeholder="Accelerometer, Gyro, Proximity ..." />
+        <p ng-show="phoneForm.sensors.$invalid && !phoneForm.sensors.$pristine" class="help-block">Sensors are required.</p>
+      </div>
+    </div>
+  </div>
   <div class="form-group" ng-class="{ 'has-error' : phoneForm.storageexpansion.$invalid && !phoneForm.storageexpansion.$pristine }">
     <label for="storageexpansion" class="cols-sm-2 form-label">Storage Expansion</label>
     <div class="cols-sm-10">
       <div>
         <input type="text" class="form-control" ng-model="formData.hardware.storageexpansion" ng-list="," name="storageexpansion" id="storageexpansion" required placeholder="External Storage size and type (up to 256 GB, microSD)" />
         <p ng-show="phoneForm.storageexpansion.$invalid && !phoneForm.storageexpansion.$pristine" class="help-block">Storage Expansion is required.</p>
-      </div>
-    </div>
-  </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine }">
-    <label for="chipset" class="cols-sm-2 form-label">Chipset</label>
-    <div class="cols-sm-10">
-      <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.chipset" ng-list="," name="chipset" id="chipset" required placeholder="Chipset Name(Qualcomm MSM8998 Snapdragon 835)" />
-        <p ng-show="phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine" class="help-block">Chipset are required.</p>
       </div>
     </div>
   </div>
