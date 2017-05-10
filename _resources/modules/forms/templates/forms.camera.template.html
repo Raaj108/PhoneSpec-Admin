@@ -50,27 +50,64 @@
     <label for="zoom" class="cols-sm-2 form-label">Zoom</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.camera.zoom" name="zoom" id="zoom" required placeholder="8X" />
+        <input type="text" class="form-control" ng-model="formData.camera.zoom" name="zoom" id="zoom" required placeholder="8X Digital Zoom" />
         <p ng-show="phoneForm.zoom.$invalid && !phoneForm.zoom.$pristine" class="help-block">Zoom is required.</p>
       </div>
     </div>
-  </div> 
+  </div>
+
   <div class="form-group" ng-class="{ 'has-error' : phoneForm.features.$invalid && !phoneForm.features.$pristine }">
     <label for="features" class="cols-sm-2 form-label">Camera Features</label>
     <div class="cols-sm-10">
       <div>
         <input type="text" class="form-control" ng-model="formData.camera.features" name="features" id="features" ng-list="," required placeholder="Optical Image Stabilization, Auto Focus ..." />
-        <p ng-show="phoneForm.features.$invalid && !phoneForm.features.$pristine" class="help-block">Features are required.</p>
+        <p ng-show="phoneForm.features.$invalid && !phoneForm.features.$pristine" class="help-block">Features is required.</p>
       </div>
     </div>
-  </div>  
+  </div>
+  <!--<div class="form-group" ng-class="{ 'has-error' : phoneForm.settings.$invalid && !phoneForm.settings.$pristine }">
+        <label for="settings" class="cols-sm-2 form-label">Camera Settings</label>
+        <div class="cols-sm-10">
+            <div>
+                <input type="text" class="form-control" ng-model="formData.camera.settings" name="settings" id="settings" ng-list="," required placeholder="" />
+                <p ng-show="phoneForm.settings.$invalid && !phoneForm.settings.$pristine" class="help-block">Camera Settings is required.</p>
+            </div>
+        </div>
+    </div>-->
   <h3>Front Camera</h3>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.frontCamera.$invalid && !phoneForm.frontCamera.$pristine }">
-    <label for="frontCamera" class="cols-sm-2 form-label">Front Camera</label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.frontCamera.megaPixel.$invalid && !phoneForm.frontCamera.megaPixel.$pristine }">
+    <label for="frontCamera.megaPixel" class="cols-sm-2 form-label">Front Camera Mega Pixels</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.camera.frontCamera" name="frontCamera" id="frontCamera" ng-list="," required placeholder="" />
-        <p ng-show="phoneForm.frontCamera.$invalid && !phoneForm.frontCamera.$pristine" class="help-block">Front Camera is required.</p>
+        <input type="text" class="form-control" ng-model="formData.camera.frontCamera.megaPixel" name="frontCamera.megaPixel" id="frontCamera.megaPixel" required placeholder="8MP" />
+        <p ng-show="phoneForm.frontCamera.megaPixel$invalid && !phoneForm.frontCamera.megaPixel$pristine" class="help-block">Front Camera Mega Pixels is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.frontCamera.aperture.$invalid && !phoneForm.frontCamera.aperture.$pristine }">
+    <label for="frontCamera.aperture" class="cols-sm-2 form-label">Front Camera Aperture</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.camera.frontCamera.aperture" name="frontCamera.aperture" id="frontCamera.aperture" required placeholder="F1.7" />
+        <p ng-show="phoneForm.frontCamera.aperture$invalid && !phoneForm.frontCamera.aperture$pristine" class="help-block">Front Camera Aperture is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.frontCamera.modes.$invalid && !phoneForm.frontCamera.modes.$pristine }">
+    <label for="frontCamera.modes" class="cols-sm-2 form-label">Front Camera Modes</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.camera.frontCamera.modes" name="frontCamera.modes" id="frontCamera.modes" required placeholder="Front Camera Modes" />
+        <p ng-show="phoneForm.frontCamera.modes$invalid && !phoneForm.frontCamera.modes$pristine" class="help-block">Front Camera Modes are required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.frontCamera.features.$invalid && !phoneForm.frontCamera.features.$pristine }">
+    <label for="frontCamera.features" class="cols-sm-2 form-label">Front Camera Features</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.camera.frontCamera.features" name="frontCamera.features" id="frontCamera.features" required placeholder="Features" />
+        <p ng-show="phoneForm.frontCamera.features$invalid && !phoneForm.frontCamera.features$pristine" class="help-block">Front Camera Features is required.</p>
       </div>
     </div>
   </div>
