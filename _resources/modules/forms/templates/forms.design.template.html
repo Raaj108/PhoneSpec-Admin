@@ -9,21 +9,12 @@
         <p ng-show="phoneForm.operatingSystem.$invalid && !phoneForm.operatingSystem.$pristine" class="help-block">Don't be lazy. Please enter Operating System</p>
       </div>
     </div>
-  </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.deviceType.$invalid && !phoneForm.deviceType.$pristine }">
-    <label for="deviceType" class="cols-sm-2 form-label">Device Type</label>
-    <div class="cols-sm-10">
-      <div>
-        <input type="text" class="form-control" ng-model="formData.design.deviceType" name="deviceType" id="deviceType" required placeholder="eg: Smart Phone" />
-        <p ng-show="phoneForm.deviceType.$invalid && !phoneForm.deviceType.$pristine" class="help-block">What is the Device type?</p>
-      </div>
-    </div>
-  </div>
+  </div>  
   <div class="form-group" ng-class="{ 'has-error' : phoneForm.dimension.$invalid && !phoneForm.dimension.$pristine }">
     <label for="dimension" class="cols-sm-2 form-label">Dimension</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.design.dimension" name="dimension" id="dimension" required placeholder="height x length x width mm" />
+        <input type="text" class="form-control" ng-model="formData.design.dimension" name="dimension" id="dimension" required placeholder="height x width x depth mm" />
         <p ng-show="phoneForm.dimension.$invalid && !phoneForm.dimension.$pristine" class="help-block">Please enter Dimension of the phone</p>
       </div>
     </div>
@@ -33,7 +24,7 @@
     <div class="cols-sm-10">
       <div>
         <input type="text" class="form-control" ng-model="formData.design.weight" name="weight" id="weight" required placeholder="123g" />
-        <p ng-show="phoneForm.weight.$invalid && !phoneForm.weight.$pristine" class="help-block">Don't be jealous, please  enter the Weight of the phone</p>
+        <p ng-show="phoneForm.weight.$invalid && !phoneForm.weight.$pristine" class="help-block">Don't be jealous, please enter the Weight of the phone</p>
       </div>
     </div>
   </div>

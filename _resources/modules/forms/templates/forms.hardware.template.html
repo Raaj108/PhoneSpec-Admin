@@ -5,7 +5,7 @@
     <label for="chipset" class="cols-sm-2 form-label">Chipset</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.chipset" ng-list="," name="chipset" id="chipset" required placeholder="Chipset Name(Qualcomm MSM8998 Snapdragon 835)" />
+        <input type="text" class="form-control" ng-model="formData.hardware.chipset" name="chipset" id="chipset" required placeholder="Chipset Name(Qualcomm MSM8998 Snapdragon 835)" />
         <p ng-show="phoneForm.chipset.$invalid && !phoneForm.chipset.$pristine" class="help-block">Chipset are required.</p>
       </div>
     </div>
@@ -14,7 +14,7 @@
     <label for="processor" class="cols-sm-2 form-label">Processor</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.processor" ng-list="," name="processor" id="processor" required placeholder="Octa-core, 2.3GHz Quad + 1.7GHz Quad, 64 bit, 10nm" />
+        <input type="text" class="form-control" ng-model="formData.hardware.processor" name="processor" id="processor" required placeholder="Octa-core, 2.3GHz Quad + 1.7GHz Quad, 64 bit, 10nm" />
         <p ng-show="phoneForm.processor.$invalid && !phoneForm.processor.$pristine" class="help-block">Processor is required.</p>
       </div>
     </div>
@@ -32,17 +32,26 @@
     <label for="graphicsProcessor" class="cols-sm-2 form-label">Graphics Processor</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.graphicsProcessor" name="graphicsProcessor" ng-list="," id="graphicsProcessor" required placeholder="Mali-G71 MP20 - EMEA" />
+        <input type="text" class="form-control" ng-model="formData.hardware.graphicsProcessor" name="graphicsProcessor" id="graphicsProcessor" required placeholder="Mali-G71 MP20 - EMEA" />
         <p ng-show="phoneForm.graphicsProcessor.$invalid && !phoneForm.graphicsProcessor.$pristine" class="help-block">Graphics Processor is required.</p>
       </div>
     </div>
   </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.internalstorage.$invalid && !phoneForm.internalstorage.$pristine }">
-    <label for="internalstorage" class="cols-sm-2 form-label">Internal Storage </label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.internalStorage.$invalid && !phoneForm.internalStorage.$pristine }">
+    <label for="internalStorage" class="cols-sm-2 form-label">Internal Storage </label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.internalstorage" name="internalstorage" id="internalstorage" required placeholder="Internal Storage Capacity (64GB)" />
-        <p ng-show="phoneForm.internalstorage.$invalid && !phoneForm.internalstorage.$pristine" class="help-block">Internal Storage is required.</p>
+        <input type="text" class="form-control" ng-model="formData.hardware.internalStorage" name="internalStorage" id="internalStorage" required placeholder="Internal Storage Capacity (64GB)" />
+        <p ng-show="phoneForm.internalStorage.$invalid && !phoneForm.internalStorage.$pristine" class="help-block">Internal Storage is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.storageExpansion.$invalid && !phoneForm.storageExpansion.$pristine }">
+    <label for="storageExpansion" class="cols-sm-2 form-label">Storage Expansion</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.hardware.storageExpansion" name="storageExpansion" id="storageExpansion" required placeholder="External Storage size and type (up to 256 GB, microSD)" />
+        <p ng-show="phoneForm.storageExpansion.$invalid && !phoneForm.storageExpansion.$pristine" class="help-block">Storage Expansion is required.</p>
       </div>
     </div>
   </div>
@@ -52,15 +61,6 @@
       <div>
         <input type="text" class="form-control" ng-model="formData.hardware.sensors" ng-list="," name="sensors" id="sensors" required placeholder="Accelerometer, Gyro, Proximity ..." />
         <p ng-show="phoneForm.sensors.$invalid && !phoneForm.sensors.$pristine" class="help-block">Sensors are required.</p>
-      </div>
-    </div>
-  </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.storageexpansion.$invalid && !phoneForm.storageexpansion.$pristine }">
-    <label for="storageexpansion" class="cols-sm-2 form-label">Storage Expansion</label>
-    <div class="cols-sm-10">
-      <div>
-        <input type="text" class="form-control" ng-model="formData.hardware.storageexpansion" ng-list="," name="storageexpansion" id="storageexpansion" required placeholder="External Storage size and type (up to 256 GB, microSD)" />
-        <p ng-show="phoneForm.storageexpansion.$invalid && !phoneForm.storageexpansion.$pristine" class="help-block">Storage Expansion is required.</p>
       </div>
     </div>
   </div>

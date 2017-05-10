@@ -10,12 +10,12 @@
       </div>
     </div>
   </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.gps.$invalid && !phoneForm.gps.$pristine }">
-    <label for="gps" class="cols-sm-2 form-label">GPS</label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.locationServices.$invalid && !phoneForm.locationServices.$pristine }">
+    <label for="locationServices" class="cols-sm-2 form-label">Location Services</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.connectivity.gps" name="gps" id="gps" required placeholder="" />
-        <p ng-show="phoneForm.gps.$invalid && !phoneForm.gps.$pristine" class="help-block">GPS is required.</p>
+        <input type="text" class="form-control" ng-model="formData.connectivity.locationServices" name="locationServices" id="locationServices" required placeholder="GPS, A-GPS ..." />
+        <p ng-show="phoneForm.locationServices.$invalid && !phoneForm.locationServices.$pristine" class="help-block">Location Services are required.</p>
       </div>
     </div>
   </div>
@@ -28,12 +28,12 @@
       </div>
     </div>
   </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.payment.$invalid && !phoneForm.payment.$pristine }">
-    <label for="payment" class="cols-sm-2 form-label">Payment</label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.nfc.$invalid && !phoneForm.nfc.$pristine }">
+    <label for="nfc" class="cols-sm-2 form-label">NFC</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.connectivity.payment" ng-list="," name="payment" id="payment" required placeholder="Samsung Payment, Apple Pay ..." />
-        <p ng-show="phoneForm.payment.$invalid && !phoneForm.payment.$pristine" class="help-block">Payment is required.</p>
+        <input type="text" class="form-control" ng-model="formData.connectivity.nfc" ng-list="," name="nfc" id="nfc" required placeholder="Yes/No" />
+        <p ng-show="phoneForm.nfc.$invalid && !phoneForm.nfc.$pristine" class="help-block">NFC is required.</p>
       </div>
     </div>
   </div>
@@ -46,12 +46,12 @@
       </div>
     </div>
   </div>
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.other.$invalid && !phoneForm.other.$pristine }">
-    <label for="other" class="cols-sm-2 form-label">Other</label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.others.$invalid && !phoneForm.others.$pristine }">
+    <label for="others" class="cols-sm-2 form-label">Others</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.connectivity.other" ng-list="," name="other" id="other" required placeholder="NFC, ANT+, Location  ..." />
-        <p ng-show="phoneForm.other.$invalid && !phoneForm.other.$pristine" class="help-block">Other are required.</p>
+        <input type="text" class="form-control" ng-model="formData.connectivity.others" ng-list="," name="others" id="others" required placeholder="ANT+, EDGE ..." />
+        <p ng-show="phoneForm.others.$invalid && !phoneForm.others.$pristine" class="help-block">Others are required.</p>
       </div>
     </div>
   </div>
