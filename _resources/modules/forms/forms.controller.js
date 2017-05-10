@@ -14,7 +14,7 @@ angular.module('formsModule').controller('formsController', ['$scope', '$log', '
     "camera": {},
     "battery": {},
     "hardware": {},
-    "multimedia": {},
+    "sound": {},
     "connectivity": {},
     "network": {}
   };

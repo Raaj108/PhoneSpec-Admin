@@ -1,0 +1,40 @@
+<!-----------------------Multi Media Information---------------------->
+<section class="form-section" id="Design">
+  <h3>Multi Media Information</h3>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.speaker.$invalid && !phoneForm.speaker.$pristine }">
+    <label for="speaker" class="cols-sm-2 form-label">Speaker</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.sound.speaker" ng-list="," name="speaker" id="speaker" required placeholder="Type of Speaker files supported (MP3, wav, ...)" />
+        <p ng-show="phoneForm.speaker.$invalid && !phoneForm.speaker.$pristine" class="help-block">Speaker is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.microphone.$invalid && !phoneForm.microphone.$pristine }">
+    <label for="microphone" class="cols-sm-2 form-label">Microphone</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.sound.microphone" ng-list="," name="microphone" id="microphone" required placeholder="Type of Microphone files supported (MP4, mov, ...)" />
+        <p ng-show="phoneForm.microphone.$invalid && !phoneForm.microphone.$pristine" class="help-block">Microphone is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.headsetJack.$invalid && !phoneForm.headsetJack.$pristine }">
+    <label for="headsetJack" class="cols-sm-2 form-label">Headset Jack</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.sound.headsetJack" ng-list="," name="headsetJack" id="headsetJack" required placeholder="" />
+        <p ng-show="phoneForm.headsetJack.$invalid && !phoneForm.headsetJack.$pristine" class="help-block">Headset Jack is required.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.soundType.$invalid && !phoneForm.soundType.$pristine }">
+    <label for="soundType" class="cols-sm-2 form-label">Sound Type</label>
+    <div class="cols-sm-10">
+      <div>
+        <input type="text" class="form-control" ng-model="formData.sound.soundType" ng-list="," name="soundType" id="soundType" required placeholder="Type of sound files supported (MP3, wav, ...)" />
+        <p ng-show="phoneForm.soundType.$invalid && !phoneForm.soundType.$pristine" class="help-block">Sound Type is required.</p>
+      </div>
+    </div>
+  </div>
+  <hr class="style7"> </section>

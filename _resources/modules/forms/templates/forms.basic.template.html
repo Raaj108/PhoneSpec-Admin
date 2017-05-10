@@ -31,12 +31,12 @@
     </div>
   </div>
 
-  <div class="form-group" ng-class="{ 'has-error' : phoneForm.additionalFeatures.$invalid && !phoneForm.additionalFeatures.$pristine }">
-    <label for="additionalFeatures" class="cols-sm-2 form-label">Additional Features</label>
+  <div class="form-group" ng-class="{ 'has-error' : phoneForm.features.$invalid && !phoneForm.features.$pristine }">
+    <label for="features" class="cols-sm-2 form-label">Phone Features</label>
     <div class="cols-sm-10">
       <div>
-        <input type="text" class="form-control" ng-model="formData.basicInfo.additionalFeatures" ng-list="," name="additionalFeatures" id="additionalFeatures" required placeholder="Iris scanner, fingerprint" />
-        <p ng-show="phoneForm.additionalFeatures.$invalid && !phoneForm.additionalFeatures.$pristine" class="help-block">Additional Features is required.</p>
+        <input type="text" class="form-control" ng-model="formData.basicInfo.features" ng-list="," name="features" id="features" required placeholder="Iris scanner, fingerprint" />
+        <p ng-show="phoneForm.features.$invalid && !phoneForm.features.$pristine" class="help-block">Basic Phone Features are required.</p>
       </div>
     </div>
   </div>
