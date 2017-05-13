@@ -1,7 +1,7 @@
 angular.module('formsModule').factory('phonePostFactory', ['$http', '$q', function ($http, $q) {
 
   var service = {};
-  var baseUrl = 'http://localhost:5000/api/admin/brand/'
+  var baseUrl = 'http://localhost:4000/api/admin/brand/'
   var _url;
 
   var generateURL = function (_brand) {
